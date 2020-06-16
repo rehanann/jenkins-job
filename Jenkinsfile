@@ -19,7 +19,7 @@ node {
     }
     stage('Share lib demo from config'){
         echo 'Shared lib demo from config'
-        // def base_conf = base_conf.conf()
-        // println base_conf
+        def base_conf = base_conf.conf()
+        println base_conf
     }
 }
