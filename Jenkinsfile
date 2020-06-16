@@ -6,4 +6,5 @@ stage('GIT Checkout'){
 stage('Share lib demo'){
     echo 'Shared lib demo'
     def base_var = base_var.call()
+    println base_var
 }
