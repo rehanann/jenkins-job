@@ -9,7 +9,9 @@ stage('Share lib demo'){
     println base_var
 }
 stage('Check path'){
-    sh (Path: 'pwd')
+    script {
+        sh (Path: 'pwd')
+    }
 }
 stage('Share lib demo from config'){
     echo 'Shared lib demo from config'
