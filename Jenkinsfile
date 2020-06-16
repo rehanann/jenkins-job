@@ -5,4 +5,5 @@ stage('GIT Checkout'){
 }
 stage('Share lib demo'){
     echo 'Shared lib demo'
+    base_var.call()
 }
