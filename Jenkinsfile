@@ -10,6 +10,8 @@ stage('Share lib demo'){
 }
 stage('Share lib demo from config'){
     echo 'Shared lib demo from config'
+    sh('pwd')
+    sh('ls -l')
     def base_conf = base_conf.conf_tag()
     println base_conf
 }
