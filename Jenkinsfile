@@ -12,8 +12,10 @@ node {
     stage('Check path'){
         script {
             PWD = sh ('pwd')
+            DIR = sh ('ls -l')
         }
         echo "$PWD"
+        echo "$DIR"
     }
     stage('Share lib demo from config'){
         echo 'Shared lib demo from config'
