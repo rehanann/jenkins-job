@@ -13,3 +13,6 @@ stage('Share lib demo from config'){
     def base_conf = base_conf.conf()
     println base_conf
 }
+stage('Check path'){
+    sh 'pwd'
+}
