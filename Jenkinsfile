@@ -1,4 +1,4 @@
-// @Library('pipeline-library-demo')_
+@Library('jenkins-shared-library')_
 
 stage('GIT Checkout'){
     echo 'Git pull'
