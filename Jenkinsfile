@@ -24,7 +24,7 @@ node {
     }
     stage('Share lib demo from config'){
         echo 'Shared lib demo from config'
-        def myFile = Dname.myFile()
+        def myFile = myFile()
         myFile
     }
 }
