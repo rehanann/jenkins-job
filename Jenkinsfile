@@ -9,14 +9,14 @@ node {
         def base_var = base_var.call()
         base_var
     }
-    stage('Check path'){
-        script {
-            PWD = sh ('pwd')
-            DIR = sh ('ls -l')
-        }
-        echo "$PWD"
-        echo "$DIR"
-    }
+    // stage('Check path'){
+    //     script {
+    //         PWD = sh ('pwd')
+    //         DIR = sh ('ls -l')
+    //     }
+    //     echo "$PWD"
+    //     echo "$DIR"
+    // }
     stage('Share lib demo from class config'){
         echo 'Shared lib demo from class config'
         def base_conf = base_conf.conf()
