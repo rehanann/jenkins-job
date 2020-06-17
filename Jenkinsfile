@@ -24,6 +24,7 @@ node {
     }
     stage('Share lib demo from config'){
         echo 'Shared lib demo from config'
-        base_file.Dname().myFile()
+        Dname d = new Dname()
+        println d.myFile()
     }
 }
